@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-compress",
+  "version": "1.0.0",
+  "description": "Compresses static assets during Nuxt build",
+  "main": "lib/module.js",
+  "keywords": [
+    "nuxt",
+    "nuxt.js",
+    "brotli",
+    "gzip",
+    "compress",
+    "compression"
+  ],
+  "peerDependencies": {
+    "nuxt": ">=2.0.0"
+  },
+  "author": "Rob Cresswell <robcresswell@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "brotli-webpack-plugin": "^1.1.0",
+    "compress-webpack-plugin": "^1.0.6"
+  }
+}
