@@ -5,27 +5,25 @@ Brotli compression.
 
 ## Getting Started
 
-1) Install the module
+1. Install the module
 
-```console
-npm install nuxt-compress
-```
+   ```console
+   npm install nuxt-compress
+   ```
 
-OR
+   OR
 
-```console
-yarn add nuxt-compress
-```
+   ```console
+   yarn add nuxt-compress
+   ```
 
-2) Add the module to your `nuxt.config.js`
+2. Add the module to your `nuxt.config.js`
 
-```js
-module.exports = {
-  modules: [
-    "nuxt-compress",
-  ]
-}
-```
+   ```js
+   module.exports = {
+     modules: ["nuxt-compress"]
+   };
+   ```
 
 ## Configuration
 
@@ -44,7 +42,8 @@ For example:
 module.exports = {
   modules: [
     [
-      "nuxt-compress", {
+      "nuxt-compress",
+      {
         gzip: {
           cache: true
         },
@@ -54,16 +53,14 @@ module.exports = {
       }
     ]
   ]
-}
+};
 ```
 
 OR
 
 ```js
 module.exports = {
-  modules: [
-    "nuxt-compress"
-  ],
+  modules: ["nuxt-compress"],
   "nuxt-compress": {
     gzip: {
       cache: true
@@ -72,5 +69,5 @@ module.exports = {
       threshold: 10240
     }
   }
-}
+};
 ```
