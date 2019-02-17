@@ -29,7 +29,7 @@ module.exports = {
 
 ## Configuration
 
-This module just provides a simple interface to include
+This module provides a simple interface to include
 [brotli-webpack-plugin](https://github.com/mynameiswhm/brotli-webpack-plugin)
 and
 [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin)
