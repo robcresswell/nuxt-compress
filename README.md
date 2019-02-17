@@ -1,7 +1,14 @@
 # nuxt-compress
 
-A simple static asset compression module for Nuxt that runs Gzip and
-Brotli compression.
+A simple static asset compression module for Nuxt that runs Gzip and Brotli
+compression during the build process.
+
+This is significantly more efficient than compressing files on the fly,
+especially for Brotli compression, which sacrifices CPU time for greater
+compression.
+
+For compression during runtime, see the `compressor` entry in the
+[Nuxt configuration docs](https://nuxtjs.org/api/configuration-render/#compressor)
 
 ## Getting Started
 
