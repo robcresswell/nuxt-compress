@@ -1,8 +1,13 @@
 {
   "name": "nuxt-compress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Compresses static assets during Nuxt build",
   "main": "lib/module.js",
+  "repository": "github:robcresswell/nuxt-compress",
+  "homepage": "https://github.com/robcresswell/nuxt-compress",
+  "bugs": {
+    "url": "https://github.com/robcresswell/nuxt-compress/issues/new"
+  },
   "keywords": [
     "nuxt",
     "nuxt.js",
