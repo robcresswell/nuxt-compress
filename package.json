@@ -1,6 +1,6 @@
 {
   "name": "nuxt-compress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compresses static assets during Nuxt build",
   "main": "lib/module.js",
   "keywords": [
