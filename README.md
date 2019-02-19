@@ -1,5 +1,9 @@
 # nuxt-compress
 
+![NPM](https://img.shields.io/npm/l/nuxt-compress.svg?style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/nuxt-compress.svg?style=for-the-badge)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/nuxt-compress.svg?style=for-the-badge)
+
 A simple static asset compression module for Nuxt that runs Gzip and Brotli
 compression during the build process.
 

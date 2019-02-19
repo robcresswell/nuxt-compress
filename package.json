@@ -1,7 +1,7 @@
 {
   "name": "nuxt-compress",
   "version": "1.0.2",
-  "description": "Compresses static assets during Nuxt build",
+  "description": "Runs gzip and brotli compression on static assets during Nuxt build",
   "main": "lib/module.js",
   "repository": "github:robcresswell/nuxt-compress",
   "homepage": "https://github.com/robcresswell/nuxt-compress",
