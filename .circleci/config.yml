@@ -30,39 +30,16 @@ jobs:
       - run:
           name: Run snyk
           command: npx snyk test
-  test:
-    <<: *defaults
-    steps:
-      - install_deps
-      - run:
-          name: Run tests
-          command: yarn test
-      - store_artifacts:
-          path: reports/coverage
-      - store_test_results:
-          path: reports
-  lint:
-    <<: *defaults
-    steps:
-      - install_deps
-      - run:
-          name: Run linting tasks
-          command: yarn lint
   release:
     <<: *defaults
     steps:
       - install_deps
-      - run: yarn build
       - run: npx semantic-release
 workflows:
   version: 2
   test_and_release:
     jobs:
       - snyk
-      - test
-      - lint
       - release:
           requires:
             - snyk
-            - lint
-            - test
