@@ -8,6 +8,9 @@
   "bugs": {
     "url": "https://github.com/robcresswell/nuxt-compress/issues/new"
   },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
   "keywords": [
     "nuxt",
     "nuxt.js",
@@ -26,6 +29,6 @@
   "license": "MIT",
   "dependencies": {
     "brotli-webpack-plugin": "^1.1.0",
-    "compression-webpack-plugin": "^3.1.0"
+    "compression-webpack-plugin": "^4.0.0"
   }
 }
