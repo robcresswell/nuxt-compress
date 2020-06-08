@@ -29,11 +29,19 @@ For compression during runtime, see the `compressor` entry in the
    yarn add nuxt-compress
    ```
 
-2. Add the module to your `nuxt.config.js`
+2. Add the module to your `nuxt.config.js` (Nuxt < v2.9)
 
    ```js
    module.exports = {
      modules: ["nuxt-compress"]
+   };
+   ```
+
+   OR (_recommended way_, N.B.: this feature is only available since Nuxt v2.9)
+
+   ```js
+   module.exports = {
+     buildModules: ["nuxt-compress"]
    };
    ```
 
