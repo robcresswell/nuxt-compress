@@ -1,10 +1,5 @@
 # nuxt-compress
 
-![License: MIT](https://img.shields.io/npm/l/nuxt-compress.svg?style=for-the-badge)
-![npm download count](https://img.shields.io/npm/dt/nuxt-compress.svg?style=for-the-badge)
-![Dependency status for latest release](https://img.shields.io/librariesio/release/npm/nuxt-compress.svg?style=for-the-badge)
-![Vulnerability count from Snyk](https://img.shields.io/snyk/vulnerabilities/npm/nuxt-compress.svg?style=for-the-badge)
-
 A simple static asset compression module for Nuxt that runs Gzip and Brotli
 compression during the build process.
 
@@ -29,19 +24,20 @@ For compression during runtime, see the `compressor` entry in the
    yarn add nuxt-compress
    ```
 
-2. Add the module to your `nuxt.config.js` (Nuxt < v2.9)
-
-   ```js
-   module.exports = {
-     modules: ["nuxt-compress"]
-   };
-   ```
-
-   OR (_recommended way_, N.B.: this feature is only available since Nuxt v2.9)
+2. Add `"nuxt-compress"` to your
+[`buildModules`](https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modules#buildmodules)
 
    ```js
    module.exports = {
      buildModules: ["nuxt-compress"]
+   };
+   ```
+
+   If you're using Nuxt < 2.9, you'll need to add it to your `modules` instead
+
+   ```js
+   module.exports = {
+     modules: ["nuxt-compress"]
    };
    ```
 
