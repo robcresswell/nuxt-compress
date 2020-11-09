@@ -29,6 +29,6 @@
   "license": "MIT",
   "dependencies": {
     "brotli-webpack-plugin": "^1.1.0",
-    "compression-webpack-plugin": "^6.0.4"
+    "compression-webpack-plugin": "^6.1.0"
   }
 }
