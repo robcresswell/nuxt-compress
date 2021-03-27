@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "pretty": true
+  },
+  "include": ["package.json", "module.ts"]
+}

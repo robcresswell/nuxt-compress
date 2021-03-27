@@ -16,7 +16,9 @@ jobs:
   release:
     <<: *defaults
     steps:
-      - install_deps
+      - checkout
+      - run: yarn --frozen-lockfile
+      - run: ./node_modules/typescript/bin/tsc
       - run: npx semantic-release
 workflows:
   version: 2

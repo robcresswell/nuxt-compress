@@ -2,7 +2,14 @@
   "name": "nuxt-compress",
   "version": "1.0.2",
   "description": "Runs gzip and brotli compression on static assets during Nuxt build",
-  "main": "lib/module.js",
+  "main": "module.js",
+  "files": [
+    "module.js",
+    "module.d.ts",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "repository": "github:robcresswell/nuxt-compress",
   "homepage": "https://github.com/robcresswell/nuxt-compress",
   "bugs": {
@@ -30,5 +37,12 @@
   "dependencies": {
     "brotli-webpack-plugin": "^1.1.0",
     "compression-webpack-plugin": "^6.1.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.3",
+    "@types/brotli-webpack-plugin": "^1.1.1",
+    "@types/compression-webpack-plugin": "^6.0.5",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
   }
 }

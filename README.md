@@ -25,11 +25,11 @@ For compression during runtime, see the `compressor` entry in the
    ```
 
 2. Add `"nuxt-compress"` to your
-[`buildModules`](https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modules#buildmodules)
+   [`buildModules`](https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modules#buildmodules)
 
    ```js
    module.exports = {
-     buildModules: ["nuxt-compress"]
+     buildModules: ['nuxt-compress'],
    };
    ```
 
@@ -37,7 +37,7 @@ For compression during runtime, see the `compressor` entry in the
 
    ```js
    module.exports = {
-     modules: ["nuxt-compress"]
+     modules: ['nuxt-compress'],
    };
    ```
 
@@ -47,9 +47,9 @@ This module provides a simple interface to include
 [brotli-webpack-plugin](https://github.com/mynameiswhm/brotli-webpack-plugin)
 and
 [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin)
-and uses the same configuration options, which can be supplied as a
-second argument to the entry in `"modules"` in your `nuxt.config.js`, or as
-a distinct entry with the key `"nuxt-compress"`. See the
+and uses the same configuration options, which can be supplied as a second
+argument to the entry in `"modules"` in your `nuxt.config.js`, or as a distinct
+entry with the key `"nuxt-compress"`. See the
 [Nuxt Modules guide](https://nuxtjs.org/guide/modules/) for more information.
 
 For example:
@@ -58,17 +58,17 @@ For example:
 module.exports = {
   modules: [
     [
-      "nuxt-compress",
+      'nuxt-compress',
       {
         gzip: {
-          cache: true
+          cache: true,
         },
         brotli: {
-          threshold: 10240
-        }
-      }
-    ]
-  ]
+          threshold: 10240,
+        },
+      },
+    ],
+  ],
 };
 ```
 
@@ -76,14 +76,14 @@ OR
 
 ```js
 module.exports = {
-  modules: ["nuxt-compress"],
-  "nuxt-compress": {
+  modules: ['nuxt-compress'],
+  'nuxt-compress': {
     gzip: {
-      cache: true
+      cache: true,
     },
     brotli: {
-      threshold: 10240
-    }
-  }
+      threshold: 10240,
+    },
+  },
 };
 ```

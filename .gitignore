@@ -1,2 +1,9 @@
+# NPM lockile (we use Yarn)
 package-lock.json
+
+# Downloaded dependencies
 node_modules/
+
+# Build output
+*.js
+*.d.ts
