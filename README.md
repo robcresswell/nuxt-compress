@@ -15,13 +15,13 @@ For compression during runtime, see the `compressor` entry in the
 1. Install the module
 
    ```console
-   npm install nuxt-compress
+   npm install -D nuxt-compress
    ```
 
    OR
 
    ```console
-   yarn add nuxt-compress
+   yarn add -D nuxt-compress
    ```
 
 2. Add `"nuxt-compress"` to your
@@ -33,21 +33,13 @@ For compression during runtime, see the `compressor` entry in the
    };
    ```
 
-   If you're using Nuxt < 2.9, you'll need to add it to your `modules` instead
-
-   ```js
-   module.exports = {
-     modules: ['nuxt-compress'],
-   };
-   ```
-
 ## Configuration
 
 This module provides a simple interface to include
-[brotli-webpack-plugin](https://github.com/mynameiswhm/brotli-webpack-plugin)
-and
 [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin)
-and uses the same configuration options, which can be supplied as a second
+configured for both gzip and brotli compression.
+
+It uses the same configuration options, which can be supplied as a second
 argument to the entry in `"modules"` in your `nuxt.config.js`, or as a distinct
 entry with the key `"nuxt-compress"`. See the
 [Nuxt Modules guide](https://nuxtjs.org/guide/modules/) for more information.
@@ -61,10 +53,10 @@ module.exports = {
       'nuxt-compress',
       {
         gzip: {
-          cache: true,
+          threshold: 8192,
         },
         brotli: {
-          threshold: 10240,
+          threshold: 8192,
         },
       },
     ],
@@ -79,10 +71,10 @@ module.exports = {
   modules: ['nuxt-compress'],
   'nuxt-compress': {
     gzip: {
-      cache: true,
+      threshold: 8192,
     },
     brotli: {
-      threshold: 10240,
+      threshold: 8192,
     },
   },
 };
