@@ -30,5 +30,8 @@
   "dependencies": {
     "brotli-webpack-plugin": "^1.1.0",
     "compression-webpack-plugin": "^6.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
