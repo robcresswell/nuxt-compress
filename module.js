@@ -5,8 +5,8 @@ module.exports = compressionModule;
 module.exports.meta = require('./package.json');
 
 function compressionModule() {
-  this.extendBuild((config, { isDev }) => {
-    if (isDev) {
+  this.extendBuild((config, { isDev, isServer }) => {
+    if (isDev || isServer) {
       return;
     }
 
