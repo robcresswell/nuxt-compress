@@ -23,7 +23,7 @@
     "compression"
   ],
   "peerDependencies": {
-    "nuxt": ">=2.9.0"
+    "nuxt": ">=2.15.8"
   },
   "author": "Rob Cresswell <robcresswell@users.noreply.github.com>",
   "license": "MIT",
@@ -37,6 +37,6 @@
     "compression-webpack-plugin": "^6.1.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   }
 }
